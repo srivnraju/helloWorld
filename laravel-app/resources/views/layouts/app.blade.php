@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="@yield('description', 'A modern Laravel starter with a clean, accessible interface.')">
+        <meta name="description" content="@yield('description', 'SVKM creates purposeful learning experiences that help every student learn, lead and inspire.')">
 
-        <title>@yield('title', config('app.name', 'Laravel'))</title>
+        <title>@yield('title', config('app.name', 'SVKM'))</title>
 
         @fonts
 

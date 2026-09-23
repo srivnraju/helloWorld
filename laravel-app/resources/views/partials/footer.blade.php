@@ -1,33 +1,44 @@
-<footer class="mt-24 border-t border-ink-100 bg-white dark:border-white/10 dark:bg-ink-900">
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
+<footer class="bg-brand-950 text-white">
+    <div class="h-1 bg-gradient-to-r from-accent-400 via-rose-400 to-brand-400"></div>
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.35fr_0.65fr_0.65fr]">
         <div>
-            <p class="text-lg font-semibold">{{ config('app.name', 'Laravel') }}</p>
-            <p class="mt-2 max-w-xs text-sm text-ink-700/80 dark:text-ink-100/70">
-                A modern Laravel starter with a considered colour system, accessible navigation and responsive layouts.
+            <div class="flex items-center gap-3">
+                <span class="flex size-11 items-center justify-center rounded-2xl bg-brand-600 text-sm font-extrabold shadow-lg shadow-black/15">SV</span>
+                <div>
+                    <p class="text-xl font-extrabold tracking-tight">{{ config('app.name', 'SVKM') }}</p>
+                    <p class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-white/45">Learn · Lead · Inspire</p>
+                </div>
+            </div>
+            <p class="mt-5 max-w-md text-sm leading-7 text-white/55">
+                Purposeful learning experiences that help students build knowledge, confidence and the character to create positive change.
             </p>
+            <a href="{{ route('contact') }}" class="btn btn-accent mt-6">Make an enquiry</a>
         </div>
 
         <div>
-            <p class="text-sm font-semibold uppercase tracking-wide text-ink-700/70 dark:text-ink-100/60">Pages</p>
-            <ul class="mt-3 space-y-2 text-sm">
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="{{ route('home') }}">Home</a></li>
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="{{ route('features') }}">Features</a></li>
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="{{ route('about') }}">About</a></li>
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="{{ route('contact') }}">Contact</a></li>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-accent-300">Explore</p>
+            <ul class="mt-5 space-y-3 text-sm text-white/60">
+                <li><a class="transition hover:text-white" href="{{ route('home') }}">Home</a></li>
+                <li><a class="transition hover:text-white" href="{{ route('features') }}#programmes">Programmes</a></li>
+                <li><a class="transition hover:text-white" href="{{ route('features') }}#experience">Learning experience</a></li>
+                <li><a class="transition hover:text-white" href="{{ route('about') }}">About SVKM</a></li>
             </ul>
         </div>
 
         <div>
-            <p class="text-sm font-semibold uppercase tracking-wide text-ink-700/70 dark:text-ink-100/60">Resources</p>
-            <ul class="mt-3 space-y-2 text-sm">
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="https://laravel.com/docs">Laravel docs</a></li>
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="https://tailwindcss.com/docs">Tailwind CSS docs</a></li>
-                <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="https://vitejs.dev">Vite</a></li>
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-accent-300">Connect</p>
+            <ul class="mt-5 space-y-3 text-sm text-white/60">
+                <li><a class="transition hover:text-white" href="{{ route('contact') }}">Admissions</a></li>
+                <li><a class="transition hover:text-white" href="{{ route('about') }}#community">Student life</a></li>
+                <li><a class="transition hover:text-white" href="{{ route('contact') }}">Contact us</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="border-t border-ink-100 py-5 text-center text-xs text-ink-700/70 dark:border-white/10 dark:text-ink-100/60">
-        &copy; {{ date('Y') }} {{ config('app.name', 'Laravel') }}. All rights reserved.
+    <div class="border-t border-white/10">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+            <p>&copy; {{ date('Y') }} {{ config('app.name', 'SVKM') }}. All rights reserved.</p>
+            <p>Designed for curious minds and confident futures.</p>
+        </div>
     </div>
 </footer>

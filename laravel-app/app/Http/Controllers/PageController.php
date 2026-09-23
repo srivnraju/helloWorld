@@ -10,25 +10,25 @@ class PageController extends Controller
     {
         return view('pages.home', [
             'stats' => [
-                ['label' => 'Pages wired up', 'value' => '4'],
-                ['label' => 'Colour tokens', 'value' => '17'],
-                ['label' => 'Themes', 'value' => 'Light & dark'],
+                ['label' => 'Learning approach', 'value' => 'Multi-disciplinary'],
+                ['label' => 'Student experience', 'value' => 'Personal & practical'],
+                ['label' => 'Future focus', 'value' => 'Confident & adaptable'],
             ],
             'highlights' => [
                 [
-                    'icon' => '🎨',
-                    'title' => 'Consistent palette',
-                    'description' => 'Brand, accent and ink scales defined as CSS variables and reused across components.',
+                    'icon' => '✦',
+                    'title' => 'Academic excellence',
+                    'description' => 'Thoughtful teaching, strong foundations and the freedom to make connections across disciplines.',
                 ],
                 [
-                    'icon' => '🧭',
-                    'title' => 'Real navigation',
-                    'description' => 'A sticky menu with active-page highlighting and a collapsible mobile drawer.',
+                    'icon' => '◎',
+                    'title' => 'Vibrant campus life',
+                    'description' => 'A welcoming culture where interests, friendships and leadership grow beyond the classroom.',
                 ],
                 [
-                    'icon' => '🌗',
-                    'title' => 'Dark mode',
-                    'description' => 'Remembers your choice and applies it before first paint, so there is no flash.',
+                    'icon' => '↗',
+                    'title' => 'Future-ready learning',
+                    'description' => 'Practical experiences that strengthen adaptability, communication and creative confidence.',
                 ],
             ],
         ]);
@@ -39,43 +39,35 @@ class PageController extends Controller
         return view('pages.features', [
             'features' => [
                 [
-                    'icon' => '🎨',
-                    'title' => 'Token-driven colour',
-                    'description' => 'Change one variable to restyle buttons, links, cards and gradients at once.',
+                    'icon' => 'Σ',
+                    'title' => 'Sciences & technology',
+                    'description' => 'Investigate, experiment and solve meaningful problems through analytical and applied learning.',
                 ],
                 [
-                    'icon' => '🧭',
-                    'title' => 'Sticky navigation',
-                    'description' => 'Active links are highlighted automatically from the current route name.',
+                    'icon' => '◇',
+                    'title' => 'Business & management',
+                    'description' => 'Build strategic perspective, entrepreneurial thinking and confidence in collaborative leadership.',
                 ],
                 [
-                    'icon' => '📱',
-                    'title' => 'Responsive by default',
-                    'description' => 'Layouts collapse cleanly from wide desktop grids down to single-column mobile.',
+                    'icon' => 'Aa',
+                    'title' => 'Humanities & communication',
+                    'description' => 'Understand people, culture and ideas while developing a clear and compelling voice.',
                 ],
                 [
-                    'icon' => '🌗',
-                    'title' => 'Persistent theme',
-                    'description' => 'Light and dark themes share the same tokens and contrast targets.',
+                    'icon' => '✎',
+                    'title' => 'Design & creativity',
+                    'description' => 'Turn imagination into purposeful work through critique, craft and interdisciplinary practice.',
                 ],
                 [
-                    'icon' => '♿',
-                    'title' => 'Accessible details',
-                    'description' => 'Skip link, focus rings, aria states on toggles and labelled form fields.',
+                    'icon' => '⚖',
+                    'title' => 'Law & society',
+                    'description' => 'Explore institutions, ethics and justice through rigorous reasoning and real-world context.',
                 ],
                 [
-                    'icon' => '✅',
-                    'title' => 'Validated forms',
-                    'description' => 'The contact form ships with server-side validation and inline error messages.',
+                    'icon' => '＋',
+                    'title' => 'Health & wellbeing',
+                    'description' => 'Connect scientific understanding with empathy, responsibility and human-centred practice.',
                 ],
-            ],
-            'palette' => [
-                ['name' => 'brand-500', 'hex' => '#3765f6', 'class' => 'bg-brand-500'],
-                ['name' => 'brand-600', 'hex' => '#2145e3', 'class' => 'bg-brand-600'],
-                ['name' => 'brand-700', 'hex' => '#1b34b8', 'class' => 'bg-brand-700'],
-                ['name' => 'accent-500', 'hex' => '#14b8a6', 'class' => 'bg-accent-500'],
-                ['name' => 'ink-800', 'hex' => '#1c2030', 'class' => 'bg-ink-800'],
-                ['name' => 'ink-50', 'hex' => '#f7f8fa', 'class' => 'bg-ink-50'],
             ],
         ]);
     }
@@ -85,20 +77,20 @@ class PageController extends Controller
         return view('pages.about', [
             'principles' => [
                 [
-                    'title' => 'One source of truth for colour',
-                    'description' => 'Every shade comes from the theme block, so nothing drifts out of sync.',
+                    'title' => 'Curiosity before certainty',
+                    'description' => 'We encourage learners to ask better questions, explore widely and stay open to new perspectives.',
                 ],
                 [
-                    'title' => 'Navigation that scales',
-                    'description' => 'Menu items are data, so adding a page means adding one array entry.',
+                    'title' => 'Excellence with empathy',
+                    'description' => 'High expectations are paired with support, respect and a genuine understanding of each learner.',
                 ],
                 [
-                    'title' => 'Contrast in both themes',
-                    'description' => 'Text, borders and surfaces are tuned separately for light and dark.',
+                    'title' => 'Learning through action',
+                    'description' => 'Ideas become meaningful when learners can test them, apply them and reflect on the outcome.',
                 ],
                 [
-                    'title' => 'Progressive enhancement',
-                    'description' => 'Pages render fully without JavaScript; the theme and menu toggles enhance them.',
+                    'title' => 'Leadership with purpose',
+                    'description' => 'We help students develop the judgement and confidence to contribute responsibly to their communities.',
                 ],
             ],
         ]);
